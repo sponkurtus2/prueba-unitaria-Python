@@ -1,9 +1,9 @@
 import json
 
 
-def write_file(file_name, user):
+def write_file(file_name, input_data):
     with open(f"{file_name}.json", "w+") as output_file:
-        data = json.dumps(user, indent=4)
+        data = json.dumps(input_data, indent=4)
         output_file.write(data)
 
 
